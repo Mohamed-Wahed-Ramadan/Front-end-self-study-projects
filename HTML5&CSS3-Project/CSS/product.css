@@ -1,0 +1,78 @@
+.product{
+    margin-top: 10%;
+}
+.product-nav{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8%;
+}
+.product-nav ul{
+    display: flex;
+    list-style: none;
+    width: 50%;
+}
+.product-nav ul li{
+    width: 25%;
+}
+.nav-a{
+    color: black;
+    text-decoration: none;
+    margin-left: 10%;
+}
+.product-nav ul li:hover .nav-a{
+    color: rgb(128, 72, 72);
+}
+.prod-con{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+.prod-sell{
+    width: 32%;
+    position: relative;
+}
+.prod-sell-img{
+    display: flex;
+    justify-content: stretch;
+}
+.prod-sell-img img{
+    width: 100%;
+}
+.prod-sell h4{
+    margin-bottom: 0%;
+    color: gray;
+}
+.prod-sell h3{
+    margin-top: 1%;
+}
+.offer-div{
+    padding: 1%;
+    width: 17%;
+    background-color: rgb(128, 72, 72);
+    border-radius: 20%;
+    transform: translate(410%,-2080%);
+    position: absolute;
+    opacity: 0;
+}
+.offer-div-2{
+    padding: 1%;
+    width: 17%;
+    background-color: rgb(128, 72, 72);
+    border-radius: 20%;
+    transform: translate(410%,-1800%);
+    position: absolute;
+    opacity: 0;
+}
+.offer{
+    color: #fff;
+    font-size: 15px;
+}
+.prod-sell:hover .offer-div{
+    opacity: 1;
+}
+.prod-sell:hover .offer-div-2{
+    opacity: 1;
+}
+.prod-sell:hover .fas{
+    color: gold;
+}

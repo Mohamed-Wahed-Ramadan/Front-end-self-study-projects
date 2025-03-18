@@ -1,0 +1,22 @@
+.panner{
+    text-align: center;
+}
+.fa-panner-2{
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid rgb(128, 72, 72);
+    transform: translate(0, -180%);
+    visibility: hidden;
+}
+.fa-panner-1{
+    color: rgb(128, 72, 72);
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transform: translate(0, -180%);
+    visibility: hidden;
+}
+.panner:hover .fa-panner-1,
+.panner:hover .fa-panner-2 {
+    visibility: visible; /* علشان نخلي العناصر تظهر لما تشاور على الـ panner */
+}
+
