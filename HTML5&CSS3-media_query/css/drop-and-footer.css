@@ -1,0 +1,69 @@
+.drop{
+    margin-top: 4% ;
+    text-align: center;
+}
+.drop-p-1{
+    font-size: 40px;
+}
+.drop-p-2{
+    font-size: 45px;
+    font-weight: bold;
+}
+.drop-con{
+    margin-top: 2%;
+}
+.drop11{
+    width: 30%;
+    padding: 0.3% 0;
+    margin-left: 1%;
+}
+.drop12{
+    width: 30%;
+    padding: 0.3% 0;
+    margin-right: 1%;
+}
+.drop2 input{
+    width: 61%;
+    padding: 0.3% 0;
+    margin: 1% 0;
+}
+.drop3 input{
+    width: 61%;
+    padding-bottom: 10%;
+    background-color: #999;
+}
+@media screen and (max-width : 900px) {
+    .drop11{
+        width: 61%;
+        display: block;
+        padding: 0;
+        margin-left: 19%;
+    }
+    .drop12{
+        width: 61%;
+        display: block;
+        padding: 0;
+        margin-left: 19%;
+        margin-top: 1%;
+    }
+}
+.btn-sent{
+    text-align: center;
+    margin: 1%;
+}
+.btn-sent button{
+    width: 25%;
+    padding:0.3%;
+    background-color: #fff;
+    color: #999;
+    border: 1px solid #999;
+    cursor: pointer;
+}
+footer{
+    text-align: center;
+    color: #777;
+    margin-top: 3%;
+    font-size: 17px;
+    margin-bottom: 1%;
+
+}

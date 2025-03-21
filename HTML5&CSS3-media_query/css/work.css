@@ -1,0 +1,50 @@
+.work{
+    margin-top: 5%;
+}
+.work-span-1{
+    font-size: 45px;
+}
+.work-span-2{
+    font-size: 50px;
+    font-weight: bold;
+}
+.work-con{
+    margin: 4% 0;
+    display: flex;
+    gap: 5%;
+}
+.work-scr{
+    width: 30%;
+    text-align: center;
+    border: 1px solid #888;
+    padding: 5% 0;
+    position: relative;
+    overflow: hidden; 
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+.work-scr i{
+    color: #777;
+}
+.work-scr h3{
+    font-size: 27px;
+    margin: auto;
+    padding: 4%;
+    width: 70%;
+    font-weight: bold;
+    color:  #eb5424;
+    border-bottom: 1px solid #777;
+}
+.work-scr p{
+    color: #777;
+    padding: 5% 8%;
+}
+@media screen and (max-width : 1046px) {
+    .work-con{
+        display: block;
+    }
+    .work-scr{
+        width: 100%;
+        margin: auto;
+        margin-bottom:10px;
+    }
+}

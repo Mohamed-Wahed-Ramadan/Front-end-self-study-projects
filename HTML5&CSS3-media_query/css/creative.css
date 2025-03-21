@@ -1,0 +1,87 @@
+.creative{
+    background-image: url(../images/creative/about-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    padding: 5% 4% 5% 55%;
+}
+.cre-p-1{
+    font-size: 40px;
+    margin-bottom: 0%;
+}
+.cre-p-1-span{
+    font-size: 45px;
+    font-weight: bold;
+}
+.cre-p-2{
+    font-size: 35px;
+    margin-top: 0%;
+    color: #eb5424;
+}
+.cre-p-3{
+    font-size: 20px;
+}
+@media screen and (max-width : 850px) {
+    .creative{
+        padding: 5% 20% 5% 3%;
+    }
+}
+/* =========== SOCIAL ============ */
+.media{
+    display: flex;
+}
+.media-1{
+    width: 33.333%;
+    display: flex;
+    padding: 3% 2% 3% 6%;
+    background-color: rgb(32, 32, 105);
+}
+.media-2{
+    width: 33.333%;
+    display: flex;
+    padding: 3% 2% 3% 6%;
+    background-color: rgb(21, 118, 197);
+}
+.media-3{
+    width: 33.333%;
+    display: flex;
+    padding: 3% 2% 3% 6%;
+    background-color: rgb(12, 12, 116);
+}
+.media-icon{
+    margin: 4%;
+    padding: 3% 3%;
+    height: 30px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10%;
+}
+.big{
+    padding: 2px;
+}
+.media-icon i{
+    color: #666;
+    margin: auto;
+}
+.media-1 h2{
+    color: #fff;
+    margin-bottom: 0;
+}
+.media-1 span{
+    color: #fff;
+
+}
+@media screen and (max-width : 900px) {
+    .media{
+        display: block;
+    }
+    .media-1{
+        width: 90%;
+    }
+    .media-2{
+        width: 90%;
+    }
+    .media-3{
+        width: 90%;
+    }
+}

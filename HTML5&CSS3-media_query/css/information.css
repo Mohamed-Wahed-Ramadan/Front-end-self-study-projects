@@ -1,0 +1,86 @@
+.info{
+    display: flex;
+}
+.info-pro{
+    width: 49%;
+    padding-top: 5%;
+}
+.info-1{
+    font-size: 40px;
+}
+.info-2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+.tr-1{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 1% 0;
+}
+.tr-2{
+    font-size: 20px;
+    padding: 1% 4%;
+}
+.td-color{
+    color: #eb5424;
+}
+.info-skill{
+    width: 49%;
+    padding-top: 5%;
+}
+.info-3{
+    font-size: 40px;
+    font-weight: bold;
+}
+.info-4{
+    font-size: 40px;
+    margin-bottom: 2%;
+}
+.info-skill-p-2{
+    font-size: 17px;
+    color: #777;
+}
+.voit{
+    width: 90%;
+    position: relative;
+}
+.voit h4{
+    padding-bottom: 3px ;
+    border-bottom: 1px solid #777;
+}
+.voit-1{
+    display: block;
+    width: 100%;
+    padding-top: 3px;
+    background-color: #eb5424;
+    position: absolute;
+    transform: translate(0 , -780%);
+}
+.voit-2{
+    display: block;
+    width: 90%;
+    padding-top: 3px;
+    background-color: #eb5424;
+    position: absolute;
+    transform: translate(0 , -770%);
+}
+.voit-3{
+    display: block;
+    width: 80%;
+    padding-top: 3px;
+    background-color: #eb5424;
+    position: absolute;
+    transform: translate(0 , -770%);
+}
+@media screen and (max-width : 850px) {
+    .info{
+        display: block;
+    }
+    .info-pro{
+        width: 100%;
+    }
+    .info-skill{
+        width: 100%;
+    }
+}

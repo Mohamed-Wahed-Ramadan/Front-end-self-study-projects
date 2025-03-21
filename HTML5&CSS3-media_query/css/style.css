@@ -1,0 +1,96 @@
+body{
+    margin: 0%;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+header{
+    display: flex;
+}
+.logo{
+    width: 40%;
+}
+.container-ul{
+    list-style-type: none;
+    width: 60%;
+    padding: 0;
+    margin-top: 1%;
+}
+.clear{
+    clear: both;
+}
+.container-ul li{
+    display: inline-block; 
+    padding: 1.5% 2%;
+}
+.container-ul :first-child{
+    margin-left: 3%;
+}
+.container-ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 19px;
+    display: block;
+    padding: 5% ;
+    font-weight: bold;
+}
+.cen {
+    position: relative;
+}
+.btn-open {
+    display: none;
+    padding: 10px;
+    font-size: 24px;
+    color: black; 
+    text-decoration: none;
+    transform: translate(-60%,-135%);
+}
+.hid {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    text-align: center;
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
+    width: 30%; 
+    visibility: hidden; 
+    opacity: 0; 
+    transform: translate(-30%,-25%);
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+}
+.btn-open:hover ~ .hid,
+.hid:hover {
+    visibility: visible; 
+    opacity: 1; 
+}
+.hid li {
+    display: block; 
+    padding: 10px;
+    border-bottom: 1px solid #ccc; 
+}
+.hid li:last-child {
+    border-bottom: none; 
+}
+.hid li a {
+    color: black; 
+    text-decoration: none;
+}
+.hid li a:hover {
+    color: #eb5424; 
+}
+@media screen and (max-width : 1046px) {
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+    .container-ul{
+        display: none;
+    }
+    .btn-open {
+        display:inline-block;
+    }
+}

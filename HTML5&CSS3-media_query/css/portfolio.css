@@ -1,0 +1,80 @@
+.portfolio{
+    background-color: #999;
+}
+.com{
+    text-align: center;
+}
+.portfolio-span-1{
+    font-size: 45px;
+    display: inline-block;
+    margin-top: 3%;
+}
+.portfolio-span-2{
+    font-size: 40px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 3%;
+}
+.portfolio-ul{
+    list-style-type: none;
+}
+.portfolio-ul li{
+    display: inline;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0% 1%;
+    padding: 0.3%;
+}
+.portfolio-ul li a{
+    color: black;
+    padding: 1.5%;
+    text-decoration: none;
+}
+.portfolio-ul li:hover{
+    background-color: #eb5424;
+}
+.portfolio-ul li a:hover{
+   color: #fff;
+}
+.Protfilo-part-1{
+    display: flex;
+    position: relative;
+}
+.part-1-img{
+    width: 25%;
+}
+.part-1-img img{
+    width: 100%;
+    display: block;
+}
+@media screen and (max-width : 1100px) {
+    .Protfilo-part-1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .part-1-img{
+        flex: 1 1 50%;
+    }
+    .btn::before{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width : 700px) {
+    .portfolio-ul li{
+        font-size: 14px;
+        padding: 0.2%;
+    }
+    .portfolio-ul{
+        width: 100%;
+        padding-left: 0;
+    }
+    .Protfilo-part-1{
+        display: block;
+    }
+    .part-1-img{
+        width: 100%;
+    }
+    .btn::before{
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,44 @@
+.panner{
+    background-image: url(../images/Home/home-bg.jpg);
+    padding: 5% 20%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.panner-h2{
+    font-size: 60px;
+    margin: 0;
+    color: #555;
+}
+.panner-h4{
+    font-size: 40px;
+    margin-top:2%;
+    color: #eb5424;
+}
+.panner-p{
+    font-size: 30px;
+    margin-top:2%;
+    color: #555;
+    margin: 0 10%;
+}
+.panner-p-span{
+    color: black;
+    font-weight: bold;
+}
+.panner-btn{
+    background-color: #eb5424;
+    border: none;
+    margin-top: 4%;
+    padding: 1% 3%;
+    color: #fff;
+    font-size: 20px;
+}
+@media screen and (max-width : 1046px) {
+    .panner{
+        padding: 3% 5%;
+    }
+    .panner-h2{
+        font-size: 50px;
+        -webkit-text-stroke: 0.3px #fff;
+    }
+}

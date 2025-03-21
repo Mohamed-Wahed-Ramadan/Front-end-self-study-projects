@@ -1,0 +1,66 @@
+.text-color:hover{
+    color: #eb5424;
+}
+.work-scr::before { /* لو عايز الخلى التاثير الضبابى من الشمال لليمين(غير work-scr لاسم الخانه اللى عايز تشتغل عليها) */
+    content: "";
+    position: absolute;
+    top: 0;
+    /* left: 0%; لو عايز اخليه من اليمين للشمال اخليها 100*/
+    right: 100%; /*لو عايز اخليه من اليمين للشمال اخليها 0*/
+    width: 100%;
+    height: 100%;
+    background: rgba(102, 100, 100, 0.5); /* لون شبه شفاف */
+    transition: right 0.5s ease; /* لو عايز اخليه من اليمين للشمال اخليها left* */
+    z-index: 1;
+}
+
+.work-scr:hover::before {
+    right: 0; /* لو عايز اخليه من اليمين للشمال اخليها left* */
+}
+.sec{
+    overflow: hidden; 
+        transition: transform 0.5s ease, filter 0.5s ease; 
+        position: relative;      
+}
+.sec::after { /* لو عايز الخلى التاثير الضبابى من الشمال لليمين(غير work-scr لاسم الخانه اللى عايز تشتغل عليها) */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%; /* لو عايز اخليه من اليمين للشمال اخليها 100 */
+    /* right: 100%; لو عايز اخليه من اليمين للشمال اخليها 0 */
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 117, 71, 0.5); /* لون شبه شفاف */
+    transition: 0.5s ease; /* لو عايز اخليه من اليمين للشمال اخليها left* */
+    z-index: 1;
+    opacity: 0;
+}
+.sec:hover::after {
+    opacity: 1;
+}
+.btn{
+    overflow: hidden; 
+        transition: transform 0.5s ease, filter 0.5s ease; 
+        position: relative;      
+}
+.btn::before{
+    content: "Show Image";
+    text-align: center;
+    font-size: 14px;
+    width: 30%;
+    height: 10%;
+    background-color: #fff;
+    border: 1px solid #eb5424;
+    border-radius: 10px;
+    transition: 0.5s ease; 
+    z-index: 2;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transform: translate(120% , 400%);
+    position: absolute;
+    cursor: pointer;
+}
+.btn:hover::before {
+    opacity: 1;
+}
