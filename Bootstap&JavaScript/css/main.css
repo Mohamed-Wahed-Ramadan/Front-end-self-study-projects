@@ -1,0 +1,26 @@
+
+body{
+    direction: rtl;
+    margin: auto;
+}
+.container{
+    width: 80%;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+.logo{
+    margin-left: auto;
+}
+.nav{
+    margin-right: auto;
+}
+.nav-con{
+    display: flex;
+}
+.nav-con li{
+    width: 30px;
+}
+.dropdown-menu{
+    list-style: none;
+}

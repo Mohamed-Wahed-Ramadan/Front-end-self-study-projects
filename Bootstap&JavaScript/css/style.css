@@ -1,0 +1,373 @@
+:root{
+    --color-1: #ffd700;
+    --color-2: #d2691e;
+    --color-3: #a0522d;
+    --color-4: #8b4513;
+    --color-5: #daa520;
+}
+body{
+    direction: rtl;
+}
+.nav-link{
+    color: var(--color-4);
+    font-size: 17px;
+    font-weight: bold;
+}
+.nav-item:hover{
+    background-color: #daa520;
+    border-radius: 20px;
+}
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    transition: width 0.4s ease;
+    overflow: hidden;
+    
+  }
+  
+  .search-box.expanded {
+    width: 200px;
+  }
+  
+  #search-input {
+    border: none;
+    outline: none;
+    display: none;
+    flex: 1;
+  }
+  
+  .search-box.expanded #search-input {
+    display: block;
+  }
+ #search-btn{
+    padding: 5px 7px;
+ }
+ .fo{
+    min-width: 200px;
+    margin-right: 10px ;
+ }
+.carousel{
+    position: relative;
+}
+ .my-div-over-img{
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+ }
+ .par-1{
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+ }
+ .par-2{
+    font-size: 28px;
+    font-weight:400;
+    color: #fff;
+    -webkit-text-stroke: 0.7px #a0522d;
+ }
+ .my-btn-img{
+    border: 0;
+    background-color: #8b4513;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+ }
+ .sec-2{
+    display: flex;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px; 
+    gap: 20px;
+}
+.father-of-h2 {
+    position: relative;
+  }
+  .car-1{
+    width: 50%;
+  }
+  .my-underspan {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+  
+  .my-underspan::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* يبعد شوية عن الكلام */
+    right: 0;
+    left: auto;
+    width: 50%;
+    height: 4px;
+    background-color: #ffd700;
+    border-radius: 2px;
+    transition: width 0.4s ease
+  }
+  .my-underspan:hover::after {
+    width: 100%;
+  }
+  .sec-3{
+    display: flex;
+    gap: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px ;
+  }
+  .g-10{
+    gap: 20px;
+    margin: 20px 0px;
+  }
+  .cls-bi-heart{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    background-color: #ffd700;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .sec-4{
+    display: flex;
+  }
+  .sec-4-2{
+    display: flex;
+  }
+  .cls-bi-heart {
+    width: 80px;          /* حجم الدائرة */
+    height: 80px;         /* يجب أن يكون الطول = العرض */
+    background-color: #ffd700; /* لون الخلفية */
+    border-radius: 50%;    /* تحويل الشكل إلى دائرة */
+    display: flex;         /* لتوسيط المحتويات */
+    align-items: center;   /* توسيط عمودي */
+    justify-content: center; /* توسيط أفقي */
+}
+.my-edit1,
+.my-edit2,
+.my-edit3{
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+}
+.my-edit1{
+    background-image: url(../img/profile-img-1.jpg);
+}
+.my-edit2{
+    background-image: url(../img/profile-img-2.jpg);
+}
+.my-edit3{
+    background-image: url(../img/profile-img-3.jpg);
+}
+.g-20{
+    background-image: url(../img/subscribe-our-newsletter-bg.jpg);
+    margin: 60px 0px;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+.hero-img{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    text-align: center;
+    transform: translate(50% , 50%);
+}
+.my-card-w{
+    width: 50%;
+}
+.input-20{
+    border-radius: 20px;
+    padding: 0px 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 0;
+    outline: 0;
+}
+.button-20{
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 0;
+    outline: 0;
+    color: #8b4513;
+}
+.input-20:hover,
+.button-20:hover
+{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+footer{
+    background-color: rgb(17, 17, 44);
+}
+
+/* //////////media screen/////////////////// */
+
+@media (max-width: 1100px) {
+  .my-div-over-img{
+      width: 70%;
+   }
+  .par-1{
+      font-size: 25px;
+   }
+   .par-2{
+      font-size: 18px;
+      font-weight:300;
+   }
+   .my-btn-img{
+     
+      padding: 5px 20px;
+      margin-top: 3px;
+   }
+   .sec-2{
+    display: block;
+   }
+   .father-of-h2{
+    width: 100%;
+   }
+   .car-1{
+    width: 100%;
+    margin-top: 20px;
+  }
+  .sec-3{
+    display: block;
+    margin-bottom: 100px ;
+  }
+  .my-card{
+    margin-bottom: 20px;
+  }
+  .sec-4{
+    display: block;
+  }
+  .g-10 h3{
+    font-size: 18px;
+  }
+  .g-10 p{
+    font-size: 14px;
+  }
+  .sec-4-2{
+    display: block;
+  }
+  .my-card-w{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .nav-link{
+    transform: translate(-45% , 0);
+  }
+}
+@media (max-width: 810px) {
+    .my-div-over-img{
+        width: 80%;
+     }
+    .par-1{
+        font-size: 20px;
+     }
+     .par-2{
+        font-size: 14px;
+        font-weight:300;
+     }
+     .my-btn-img{
+       
+        padding: 4px 20px;
+        margin-top: 3px;
+     }
+     
+  }
+  /* //////////////////////BLOG////////////////////////// */
+
+  .sec-11{
+    padding: 30px 50px;
+    background-color: rgb(241, 239, 239);
+  }
+  .sec-11 h2{
+    color: #8b4513;
+  }
+  .sec-11 p{
+    color: #8b4513;
+    margin-right: auto;
+  }
+  .sec-11 p a{
+    color: #daa520;
+    text-decoration: none;
+  }
+  .new-div-1{
+    display: flex;
+  }
+.sec-12{
+  display: flex;
+  gap: 20px;
+}
+.my-sec-1{
+  width: 100%;
+  margin: 25px 0px;
+}
+.diff-sec{
+  width: 70%;
+}
+.my-sec-1-img{
+  height: 100%;
+}
+.my-sec-1-btn{
+  border: 0;
+  outline: 0;
+  background-color: #ffd700;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.my-sec-1-btn a{
+  text-decoration: none;
+  color: black;
+}
+.my-sec-13{
+  width: 25%;
+  margin-top: 50px;
+}
+.final-div{
+  display: flex;
+  justify-content: space-between;
+}
+.final-input{
+  width: 49%;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.final-btn{
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: #8b4513;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* لو RTL استخدم left بدل right */
+  display: none;
+  z-index: 9999;
+  padding: 10px 12px;
+  font-size: 20px;
+}
+@media (max-width: 1100px) {
+  .sec-12{
+    display: block;
+  }
+  .diff-sec{
+    width: 100%;
+  }
+  .my-sec-13{
+    width: 100%;
+  }
+}
