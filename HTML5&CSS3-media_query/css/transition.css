@@ -46,7 +46,7 @@
 .btn::before{
     content: "Show Image";
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     width: 30%;
     height: 10%;
     background-color: #fff;
@@ -63,4 +63,24 @@
 }
 .btn:hover::before {
     opacity: 1;
+}
+@media screen and (max-width : 1230px){
+    .btn::before{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width : 1000px){
+    .btn::before{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width : 700px){
+    .btn::before{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width : 530px){
+    .btn::before{
+        font-size: 22px;
+    }
 }

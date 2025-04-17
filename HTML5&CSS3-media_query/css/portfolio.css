@@ -55,9 +55,6 @@
     .part-1-img{
         flex: 1 1 50%;
     }
-    .btn::before{
-        font-size: 20px;
-    }
 }
 @media screen and (max-width : 700px) {
     .portfolio-ul li{
@@ -74,7 +71,5 @@
     .part-1-img{
         width: 100%;
     }
-    .btn::before{
-        font-size: 25px;
-    }
+    
 }

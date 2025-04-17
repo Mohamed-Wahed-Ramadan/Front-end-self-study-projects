@@ -120,6 +120,7 @@ body{
   }
   .g-10{
     gap: 20px;
+    display: flex;
     margin: 20px 0px;
   }
   .cls-bi-heart{
@@ -275,6 +276,12 @@ footer{
        
         padding: 4px 20px;
         margin-top: 3px;
+     }
+     .g-10{
+      display: block;
+     }
+     .g-10-w{
+      width: 100%;
      }
      
   }
