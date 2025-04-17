@@ -84,3 +84,8 @@
         font-size: 22px;
     }
 }
+@media screen and (max-width : 370px){
+    .btn::before{
+        font-size: 18px;
+    }
+}
