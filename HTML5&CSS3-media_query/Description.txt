@@ -1,0 +1,6 @@
+This is a responsive website built using HTML5 and CSS3.
+It adapts seamlessly to different screen sizes using media queries.
+The layout is clean, modern, and optimized for user experience.
+Animations and smooth transitions enhance the overall design.
+It's a simple yet effective showcase of frontend fundamentals.
+
