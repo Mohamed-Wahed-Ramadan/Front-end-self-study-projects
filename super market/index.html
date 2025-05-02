@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spark Market</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body{
+            background-color: #213448;
+            background-image: url(./img/background.png);
+            background-repeat:no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="cen">
+        <button class="inpp-btn" id="myButton">get start !</button>
+        <div class="cenn" id="myDiv">
+            <input class="in-btn" id="username" type="text" placeholder="Enter your name"><br>
+            <input class="in-btn" id="userphone" type="text" placeholder="Enter your number"><br>
+            <button class="inp-btn" id="submitBtn">let's shoping</button>
+        </div>
+    </div>
+
+    <!-- <script src="./js/script.js"></script> -->
+     <script>
+       document.getElementById('myButton').addEventListener('click', function() {
+  const div = document.getElementById('myDiv');
+  
+  if (div.style.display === 'none' || !div.style.display) {
+    div.style.display = 'block';
+    div.classList.add('animate__animated', 'animate__fadeInDown');
+  } else {
+    div.classList.add('animate__animated', 'animate__fadeOutUp');
+    setTimeout(() => {
+      div.style.display = 'none';
+      div.classList.remove('animate__fadeOutUp');
+    }, 500);
+  }
+});
+
+        document.getElementById('submitBtn').addEventListener('click', function() {
+  // جلب القيم مع إزالة المسافات الزائدة
+  const name = document.getElementById('username').value.trim();
+  const phone = document.getElementById('userphone').value.trim();
+  
+  // التحقق من الحقول
+  if (!name || !phone) {
+    alert('Please fill all data');
+    return;
+  }
+  
+  // حفظ البيانات في localStorage
+  localStorage.setItem('userName', name);
+  localStorage.setItem('userPhone', phone);
+  
+  // الانتقال لصفحة الهوم
+  window.location.href = 'home.html';
+});
+     </script>
+</body>
+</html>

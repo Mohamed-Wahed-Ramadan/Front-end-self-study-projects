@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عربة التسوق</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body data-bs-theme="light">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-navbar " style="background-color: #94B4C1;">
+        <div class="container">
+            <a class="navbar-brand" href="./home.html"><img src="./img/logo.png" alt="logo" style="height: 50px; width: 50px;"></a>
+            <span id="user" class="text-white me-2" style="color: black;"></span>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav" >
+                <div style="margin-left: auto;">
+                <div class="d-flex align-items-center">
+                    <button id="darkModeToggle" class="btn btn-outline-light me-2" style="color: black;">
+                        <i class="bi bi-moon-fill"></i> Change mode
+                    </button>
+                    
+                    <button class="btn btn-danger logout" style="color: black;">Logout</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container " style="margin-top: 100px; text-align: center;">
+        <div class="title-div" style="display: inline-block; text-align: center; margin: auto; margin: 20px 0;">
+            <h2 class="title">Shopping Cart</h2>
+            <span class="title-dash"></span>
+        </div>        
+        <!-- معلومات المستخدم -->
+        <div class="card mb-4">
+            <div class="card-header text-white " style="background-color: #94B4C1;">
+                <h5 style="color: black;">User information</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><strong>Name:</strong> <span id="userNameDisplay"></span></p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>Phone :</strong> <span id="userPhoneDisplay"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- منتجات السلة -->
+        <div class="card mb-4" style="background-color: #94B4C1;">
+            <div class="card-header  text-white">
+                <h5 style="color: black;">Products</h5>
+            </div>
+            <div class="card-body">
+                <div id="cartItemsContainer" class="table-responsive">
+                    <!-- سيتم ملؤها بالمنتجات عبر JavaScript -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- ملخص الطلب -->
+        <div class="card mb-4">
+            <div class="card-header text-white" style="background-color: #94B4C1;">
+                <h5 style="color: black;">Order summary</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><strong>Total before discount:</strong> <span id="totalBeforeDiscount">0</span>$</p>
+                        <p><strong>Total discount:</strong> <span class="text-success" id="totalDiscount">0</span>$</p>
+                        <!-- <p><strong>The amount you saved:</strong> <span id="savedAmount" class="text-success">0</span>$</p> -->
+                    </div>
+                    <div class="col-md-6">
+                        <p class="h4"><strong>Final total:</strong> <span id="totalAfterDiscount" style="color: goldenrod;">0</span>$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- أزرار التأكيد -->
+        <div class="d-flex justify-content-between">
+            <button id="backToHome" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Back to shopping
+            </button>
+            <button id="confirmPurchase" class="btn btn-success">
+                <i class="bi bi-check-circle"></i> Confirm purchase
+            </button>
+        </div>
+    </div>
+
+    <div style="margin: 50px 0;"></div>
+
+    <footer>
+        <p class="p-footer">Designed by ENG/ Mohamed Wahed Ramadan</p>
+        <p class="p-footer">phone: (+20)1123002663</p>
+        <p class="p-footer">Mail: mohamed.wahed.work@gmail.com</p>
+        <p  class="p-footer">
+        <span><a href="www.linkedin.com/in/mohamed-wahed-ramadan"><i class="bi bi-linkedin " style="margin-left: 30px; font-size: 2rem; color: #fff;"></i></a></span>
+        <span><a href="https://github.com/Mohamed-Wahed-Ramadan"><i class="bi bi-github " style=" font-size: 2rem; color: #fff;"></i></a></span>
+      </p>
+      <p class="p-footer">&copy;  All rights reserved</p>
+      </footer>
+        
+
+      <button id="backToTopBtn" class="back-to-top" title="العودة لأعلى">
+        <i class="bi bi-arrow-up-circle-fill"></i> <!-- أيقونة من Bootstrap Icons -->
+      </button>
+
+
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/cart.js"></script>
+</body>
+</html>
