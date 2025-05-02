@@ -223,18 +223,60 @@ nav{
     gap: 30px;
     margin: 0;
   }
+  .span-1{
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .span-2{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    display: none;
+
+  }
+  .protect:hover .span-2{
+    display: inline;
+  }
+  .protect:hover .span-1{
+    display: none;
+  }
+
+  /* //////////////////////////////media Query/////////////////////////////// */
+  @media screen and (max-width : 1405px) {
+    .span-2{
+        font-size: 13px;
+      }
+}
+
+@media screen and (max-width : 1200px) {
+    .span-2{
+        font-size: 11px;
+      }
+}
   
 @media screen and (max-width : 1100px) {
     .protect{
         flex: 0 0 calc(33% - 1%);
         width: 33%;
     }
+    .span-2{
+        font-size: 14px;
+      }
+}
+@media screen and (max-width : 993px) {
+    .span-2{
+        font-size: 12px;
+      }
 }
 @media screen and (max-width : 800px) {
     .protect{
         flex: 0 0 calc(49% - 1%);
         width: 49%;
     }
+    .span-2{
+        font-size: 14px;
+      }
 }
 /* للشاشات الصغيرة (أقل من 500px) */
 @media screen and (max-width: 780px) {
@@ -278,4 +320,14 @@ nav{
         flex: 0 0 calc(97% - 1%);
         width: 97%;
     }
+    .span-2{
+        font-size: 17px;
+      }
+}
+
+/* ////////////////// */
+.dropdown-menu-2 {
+    max-height: 200px; /* ارتفاع ثابت للقائمة */
+    overflow-y: auto; /* إظهار شريط التمرير عند الحاجة */
+    width: 220px; /* عرض مناسب لعرض المحتوى */
 }
