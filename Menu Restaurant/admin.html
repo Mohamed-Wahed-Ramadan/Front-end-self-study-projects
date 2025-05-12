@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <!-- Arabic Meta Tags -->
+<meta name="title" content="مطعم Menu | مشويات، مقبلات، أسماك، بيتزا، فطائر، حلويات ومشروبات في مكان واحد">
+<meta name="description" content="مطعم Menu يقدم لك أشهى المشويات، المقبلات، الأسماك، البيتزا، الفطائر، الحلويات، والمشروبات. أجواء رائعة،
+             توصيل سريع، وخدمة ممتازة لجميع أفراد العائلة. اطلب الآن!">
+<meta name="keywords" content="مطعم Menu, مشويات, مقبلات, أسماك, بيتزا, فطائر
+            , حلويات, مشروبات, مطاعم, توصيل أكل, طلب أونلاين, مطاعم قريبة, أكل شرقي وغربي">
+
+<!-- English Meta Tags -->
+<meta name="title" content="Menu Restaurant | Grills, Appetizers, Seafood, Pizza, Pastries, Desserts & Drinks">
+<meta name="description" content="Menu Restaurant offers a delicious variety of grills, appetizers, seafood, pizza,
+             pastries, desserts, and drinks. Great atmosphere, fast delivery, and excellent service. Order now!">
+<meta name="keywords" content="Menu Restaurant, grilled food, appetizers, seafood, pizza, pastries, desserts, drinks,
+             food delivery, online food order, best restaurant, Eastern and Western food, nearby restaurants">
+    <title>Menu Restaurant</title>
+    <link id="favicon" rel="icon" type="image/png" href="./Menu_Logo_White.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style2.css">
+    
+</head>
+<body>
+
+  <div class="page-wrapper">
+    
+    <header> <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: rgba(50 ,50 ,50 ,0.5); position: fixed; width: 100%; z-index: 5; direction: ltr;">
+        <div class="containerr">
+          <div style="width: 120px; height: 50px;">
+            <a class="navbar-brand" href="./home.html"><img style="width: 100%; height: 100%;" src="./Menu_Logo_White.png" alt="Menu Restaurant" loading="lazy"></a>
+          </div>
+          <div>
+            <span id="user" style="cursor: pointer;" ></span>
+            <i class="bi bi-cart3" style="font-size: 28px; color: white; cursor: pointer;"></i>
+            <span id="num-cart">0</span>
+          </div>
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="تبديل التنقل">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMenu" >
+            <ul class="navbar-nav  mb-2 mb-lg-0" style="margin-left: auto;">
+              <li class="nav-item hov"><a class="nav-link" href="#grills">مشويات</a></li>
+              <li class="nav-item hov"><a class="nav-link" href="#appetizers">مقبلات</a></li>
+              <li class="nav-item hov"><a class="nav-link" href="#seafood">أسماك</a></li>
+              <li class="nav-item hov"><a class="nav-link" href="#pizza">بيتزا</a></li>
+              <li class="nav-item hov"><a class="nav-link" href="#pastries">فطائر</a></li>
+              <li class="nav-item hov"><a class="nav-link" href="#desserts">حلويات</a></li>
+              <li class="nav-item hov"><a class="nav-link" href="#drinks">مشروبات</a></li>
+            </ul>
+          </div> -->
+        </div>
+      </nav>
+<br>
+    </header>
+    
+    <main class="content">
+
+    <div class="admin-container my-5" style="text-align: center;">
+        <h1 style="color: #fff;">لوحة التحكم</h1>
+        
+        <div class="product-form" style="background-color: rgb(193 ,154, 107); width: 350px; margin: auto; margin-top: 20px; margin-bottom: 35px; border:3px solid #d6d4d4">
+            <h2>إضافة منتج جديد</h2>
+            <form id="add-product-form">
+                <div>
+                    <label>مسار الصورة:</label><br>
+                    <input class="inp" type="text" id="product-img" required>                    
+                </div>
+                <div>
+                    <label>العنوان:</label><br>
+                    <input class="inp" type="text" id="product-text" required>
+                </div>
+                <div>
+                    <label>الوصف:</label><br>
+                    <textarea class="inp" id="product-discription" required></textarea>
+                </div>
+                <div>
+                    <label>السعر:</label><br>
+                    <input class="inp" type="number" id="product-price" required>
+                </div>
+                <div>
+                    <label>القسم:</label><br>
+                    <select id="product-category" class="inp" required >
+                        <option value="grilled">مشويات</option>
+                        <option value="appetizers">مقبلات</option>
+                        <option value="seafood">أسماك</option>
+                        <option value="pizza">بيتزا</option>
+                        <option value="pastries">فطائر</option>
+                        <option value="desserts">حلويات</option>
+                        <option value="drinks">مشروبات</option>
+                    </select>
+                </div>
+                <button type="submit" class="inp">إضافة المنتج</button>
+            </form>
+        </div>
+        
+        <div class="product-list" id="admin-products-list">
+            <!-- سيتم ملؤها بالمنتجات عبر JavaScript -->
+        </div>
+    </div>
+    
+    <img id="floating-img" src="./img/mov1.png" alt="Menu Restaurant" style="position: absolute; width: 80px; height: 80px; z-index: -1;">
+
+<button id="scrollToTop" title="العودة لأعلى">↑</button>
+    </main>
+    
+    <footer class="sec-footer">
+  <img src="./Menu_Logo_White.png" alt="Menu Restaurant" loading="lazy">
+  <h1 class="col-fff">Menu Restaurant</h1>
+  <h4 class="col-fff">تم التصميم والانشاء بواسطه <br>المهندس / محمد وحيد رمضان</h4>
+  <p class="col-fff">phone: 01123002663 <br>
+  mail: mohamed.wahed.work@gmail.com <br>
+  <a href="https://www.linkedin.com/in/mohamed-wahed-ramadan" target="_blank" class="me-3">
+  <i class="bi bi-linkedin fs-1 "></i>
+  </a>
+
+  <a href="https://github.com/Mohamed-Wahed-Ramadan" target="_blank">
+    <i class="bi bi-github fs-1 "></i><br>
+  </a>
+  </p>
+  <hr>
+  <p class="col-fff"> جميع الحقوق محفوظه 2025 &copy;</p>
+</footer>
+    
+  </div>
+
+    
+   
+
+
+    <script src="./js/admin.js"></script>
+    <script src="./js/home.js"></script>
+</body>
+</html>

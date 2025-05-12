@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Arabic Meta Tags -->
+<meta name="title" content="مطعم Menu | مشويات، مقبلات، أسماك، بيتزا، فطائر، حلويات ومشروبات في مكان واحد">
+<meta name="description" content="مطعم Menu يقدم لك أشهى المشويات، المقبلات، الأسماك، البيتزا، الفطائر، الحلويات، والمشروبات. أجواء رائعة،
+             توصيل سريع، وخدمة ممتازة لجميع أفراد العائلة. اطلب الآن!">
+<meta name="keywords" content="مطعم Menu, مشويات, مقبلات, أسماك, بيتزا, فطائر
+            , حلويات, مشروبات, مطاعم, توصيل أكل, طلب أونلاين, مطاعم قريبة, أكل شرقي وغربي">
+
+<!-- English Meta Tags -->
+<meta name="title" content="Menu Restaurant | Grills, Appetizers, Seafood, Pizza, Pastries, Desserts & Drinks">
+<meta name="description" content="Menu Restaurant offers a delicious variety of grills, appetizers, seafood, pizza,
+             pastries, desserts, and drinks. Great atmosphere, fast delivery, and excellent service. Order now!">
+<meta name="keywords" content="Menu Restaurant, grilled food, appetizers, seafood, pizza, pastries, desserts, drinks,
+             food delivery, online food order, best restaurant, Eastern and Western food, nearby restaurants">
+    <title>Menu Restaurant</title>
+    <!-- داخل <head> -->
+<link id="favicon" rel="icon" type="image/png" href="./Menu_Logo_White.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style2.css">
+</head>
+<body >
+<div class="page-wrapper">
+    
+    <header> 
+      <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: rgba(50 ,50 ,50 ,0.5); position: fixed; width: 100%; z-index: 5;">
+        <div class="containerr">
+          <div style="width: 120px; height: 50px;">
+            <a class="navbar-brand" href="./home.html"><img style="width: 100%; height: 100%;" src="./Menu_Logo_White.png" alt="Menu Restaurant" loading="lazy"></a>
+          </div>
+          <div>
+            <span id="user" style="cursor: pointer;" ></span>
+            <i class="bi bi-cart3" style="font-size: 28px; color: white; cursor: pointer;"></i>
+            <span id="num-cart">0</span>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="تبديل التنقل">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMenu" >
+            <ul class="navbar-nav  mb-2 mb-lg-0" style="margin-left: auto;">
+              <li class="nav-item hov"><a class="nav-link" href="#grills">مشويات</a></li>
+              <li class="nav-item hov"><a class="nav-link" href="#appetizers">مقبلات</a></li>
+              <li class="nav-item hov"><a class="nav-link" href="#seafood">أسماك</a></li>
+              <li class="nav-item hov"><a class="nav-link" href="#pizza">بيتزا</a></li>
+              <li class="nav-item hov"><a class="nav-link" href="#pastries">فطائر</a></li>
+              <li class="nav-item hov"><a class="nav-link" href="#desserts">حلويات</a></li>
+              <li class="nav-item hov"><a class="nav-link" href="#drinks">مشروبات</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<br>
+    </header>
+    
+    <main class="content">
+      
+<div class="space">
+  <h1 style="text-align: center; color: #fff; margin-top: 10px;">مطعم Menu – أشهى الأكلات الشرقية والغربية</h1>
+
+</div>
+<!-- ////////////////////////////////grilled/////////////////////////////////// -->
+      <section id="grills" class="container">
+       <div style="text-align: center; margin: 10px 0;">
+        <div class="head">
+            <h2>المشويات</h2>
+            <span></span>
+        </div>
+       </div>
+        <div id="products-grilled" style="display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            justify-content: space-between;"></div>
+        </div>
+      </section>
+      <br>
+<!-- ////////////////////////////////appetizers///////////////////////////// -->
+      <section id="appetizers" class="container">
+        <div style="text-align: center; margin: 10px 0;">
+         <div class="head">
+             <h2>المقبلات</h2>
+             <span></span>
+         </div>
+        </div>
+         <div id="products-appetizers" style="display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            justify-content: space-between;"></div>
+         </div>
+       </section>
+<!-- ////////////////////////////////seafood///////////////////////////// -->
+      <section id="seafood" class="container">
+        <div style="text-align: center; margin: 10px 0;">
+         <div class="head">
+             <h2>اسماك</h2>
+             <span></span>
+         </div>
+        </div>
+         <div id="products-seafood" style="display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            justify-content: space-between;"></div>
+         </div>
+       </section>
+<!-- ////////////////////////////////pizza///////////////////////////// -->
+      <section id="pizza" class="container">
+        <div style="text-align: center; margin: 10px 0;">
+         <div class="head">
+             <h2>بيتزا</h2>
+             <span></span>
+         </div>
+        </div>
+         <div id="products-pizza" style="display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            justify-content: space-between;"></div>
+         </div>
+       </section>
+<!-- ////////////////////////////////pastries///////////////////////////// -->
+      <section id="pastries" class="container">
+        <div style="text-align: center; margin: 10px 0;">
+         <div class="head">
+             <h2>فطائر</h2>
+             <span></span>
+         </div>
+        </div>
+         <div id="products-pastries" style="display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            justify-content: space-between;"></div>
+         </div>
+       </section>
+<!-- ////////////////////////////////desserts///////////////////////////// -->
+      <section id="desserts" class="container">
+        <div style="text-align: center; margin: 10px 0;">
+         <div class="head">
+             <h2>حلويات</h2>
+             <span></span>
+         </div>
+        </div>
+         <div id="products-desserts" style="display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            justify-content: space-between;"></div>
+         </div>
+       </section>
+<!-- ////////////////////////////////drinks///////////////////////////// -->
+      <section id="drinks" class="container">
+        <div style="text-align: center; margin: 10px 0;">
+         <div class="head">
+             <h2>مشروبات</h2>
+             <span></span>
+         </div>
+        </div>
+         <div id="products-drinks" style="display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            justify-content: space-between;" ></div>
+         </div>
+       </section>
+<!-- /////////////////////////////////////////////////////////////////////// -->
+<section>
+    <!-- <div>
+        <div class="slide">
+            <div class="slide-prod d-flex " >
+                <div style=" display: flex; top: 50%; transform: translatey(-50%); position: absolute; justify-content: space-between; padding: 10px;">
+                    <div class="slide-img">
+                        <img src="./img/g1.png" alt="">
+                    </div>
+                    <div style="text-align: center; width: 32%;">
+                        <h3 style="color: #333; font-weight: bold;">جوانح فراااااخ</h3>
+                        <h5 style="color: #fff;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quam similique dolor
+                            pariatur omnis laborum eligendi, aliquam delectus ipsum. Molestiae, culpa sequi harum 
+                            eligendi quassimilique consequuntur nobis enim perferendis?
+                        </h5>
+                    </div>
+                    <div style="width: 12%; direction: rtl;">
+                        <span class="br slide-price">30 L.E</span>
+                        <input class="br slide-input" type="number" placeholder="mount">
+                        <button class="br slide-btn">شراء</button>
+                        <i class="bi bi-star favorite-icon position-absolute br slide-star"></i><br>
+                        
+                    </div>
+                    <button class="br slide-btn2">>></button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    
+</section>
+
+    <img id="floating-img" src="./img/mov1.png" alt="Menu Restaurant" style="position: absolute; width: 80px; height: 80px; z-index: -1;">
+
+    </main>
+    
+   <footer class="sec-footer">
+  <img src="./Menu_Logo_White.png" alt="Menu Restaurant" loading="lazy">
+  <h1 class="col-fff">Menu Restaurant</h1>
+  <h4 class="col-fff">تم التصميم والانشاء بواسطه <br>المهندس / محمد وحيد رمضان</h4>
+  <p class="col-fff">phone: 01123002663 <br>
+  mail: mohamed.wahed.work@gmail.com <br>
+  <a href="https://www.linkedin.com/in/mohamed-wahed-ramadan" target="_blank" class="me-3">
+  <i class="bi bi-linkedin fs-1 "></i>
+  </a>
+
+  <a href="https://github.com/Mohamed-Wahed-Ramadan" target="_blank">
+    <i class="bi bi-github fs-1 "></i><br>
+  </a>
+  </p>
+  <hr>
+  <p class="col-fff"> جميع الحقوق محفوظه 2025 &copy;</p>
+</footer>
+    <button id="scrollToTop" title="العودة لأعلى">↑</button>
+
+  </div>
+
+
+ 
+
+
+
+    
+      <!-- زر تغيير اللغة -->
+      <!-- <button id="changeLanguage" title="تغيير اللغة">EN</button> -->
+      <script src="./js/home.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
