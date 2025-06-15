@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+p{
+  font-size: 18px;
+}
+
+/* Scrollbar for Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 10px; /* عرض الشريط الجانبي */
+}
+
+::-webkit-scrollbar-track {
+  background: inherit; /* لون الخلفية */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff7b00; /* اللون البرتقالي */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e06600; /* لون أغمق عند التمرير */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.head{
+  text-align: center;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+.head h3{
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+.head span{
+  height: 2px;
+  background-color: #ff7b00;
+  width: 50%;
+  display: block;
+  margin: auto;
+  transition: all 0.5s ease-out;
+}
+.head:hover span{
+width: 90%;
+}
+#ltr-trans {
+  opacity: 0;
+}
+#scrollToTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            z-index: 99;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            background-color: black;
+            color: #ff7b00;
+            border: 2px solid #ff7b00;
+            cursor: pointer;
+            font-size: 24px;
+            transition: all 0.3s;
+        }
+        
+        #scrollToTopBtn:hover {
+            transform: scale(1.1);
+        }
+/* ////////////////////////////////////////////////////// */
+img {
+  user-select: none;   /* يمنع تحديد الصور بالنقر المطول */
+  pointer-events: none; /* يمنع التفاعل مع الصور (اختياري) */
+  -webkit-user-drag: none; /* يدعم سفاري وكروم */
+  -khtml-user-drag: none; /* يدعم متصفحات قديمة */
+  -moz-user-drag: none; /* يدعم فايرفوكس */
+}

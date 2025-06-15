@@ -1,0 +1,196 @@
+.About{
+    margin: 250px 0 210px;
+}
+.about{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+  justify-content: center;
+}
+.my-img{
+    width: 350px;
+    height: 250px;
+    margin-right: 20px;
+    /* overflow: hidden; */
+    position: relative;
+}
+/* .my-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0 50px 0 50px;
+} */
+/* .img-back-up{
+    position: absolute;
+    z-index: -1;
+    width: 50px;
+    height: 50px;
+    background-color: #ff7b00;
+    top: 0;
+    left: 0;
+    transform: translate(-10%,-10%);
+}
+.img-back-down{
+    position: absolute;
+    z-index: -1;
+    width: 50px;
+    height: 50px;
+    background-color: #ff7b00;
+    bottom: 0;
+    right: 0;
+    transform: translate(10%,10%);
+} */
+.about-me{
+  display: flex;
+  flex-direction: column; /* الترتيب العمودي */
+  justify-content: center; /* المحور الرئيسي (الرأسي في هذه الحالة) */
+  /* align-items: center; */
+  margin-right: auto;
+  margin-left: 30px;
+}
+.chatpot-img{
+     width: 150px;
+    height: 100px;
+    margin-left: auto;
+}
+.chatpot-img img{
+    width: 100%;
+    height: 100%;
+}
+.chatpot-btn{
+    background: none;
+    outline: none;
+    border: none;
+}
+.chatpot-btn span{
+    color: #ff7b00;
+    background-color: #333;
+    border-radius: 20px;
+    padding: 3px 7px;
+}
+.icons{
+    text-align: center;
+    margin-top: 130px;
+}
+.icons a{
+    
+    list-style: none;
+
+}
+.icons a i{
+    color: #ff7b00;
+    padding: 5px 10px;
+    border: 2px solid #ff7b00;
+    border-radius: 50px;
+}
+.download-btn{
+    outline: none;
+    border: none;
+    background: none;
+    color: #ff7b00;
+    font-weight: bold;
+    border-left: 2px solid #ff7b00;
+    border-right: 2px solid #ff7b00;
+    border-radius: 5px;
+    margin: 15px;
+    transition: all 0.5s ease;
+}
+.download-btn a{
+    color: #ff7b00;
+    font-weight: bold;
+    font-size: 23px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.download-btn:hover{
+    background-color: #ff7b00;
+    color: #333;
+}
+.download-btn a:hover{
+    color: #333;
+}
+/* 
+@media (max-width: 1200px) {
+    .About{
+        margin: 100px 0 100px;
+    }
+    .about {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-me {
+  order: 2;
+  margin-top: 20px;
+}
+
+.my-img {
+  order: 1;
+  margin-top: 30px;
+   top: -100px;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin-right: 0;
+}
+.icons{
+    margin-top: 50px;
+}
+
+} */
+ @media (max-width: 1200px) {
+   
+  .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    padding: 10px;
+  }
+
+  .about-me {
+    margin: 0 auto;
+    width: 90%;
+    order: 2;
+    transform: none;
+  }
+
+  .about-me h2,
+  .about-me h3,
+  .about-me h4 {
+    font-size: 22px;
+    word-wrap: break-word;
+  }
+
+  .my-img {
+    width: 250px;
+    height: 600px;
+    margin: 0 auto;
+    order: 1;
+    transform: none;
+    top: 0;
+    /* scale: 2; */
+  }
+    VerticalCarousel{
+        margin: auto 0;
+    }
+
+
+  .icons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .icons a i {
+    font-size: 28px;
+    margin: 5px;
+  }
+
+  .download-btn {
+    display: block;
+    margin: 15px auto;
+  }
+}
