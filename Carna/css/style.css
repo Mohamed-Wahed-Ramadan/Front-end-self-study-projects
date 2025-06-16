@@ -1,0 +1,253 @@
+
+  body {
+    background: #dad9d9;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+
+  .signup-box {
+    position: relative;
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: height 0.5s ease;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+  }
+
+  .signup-box::before,
+  .signup-box::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: linear-gradient(45deg, red, blue, red, blue);
+    animation: spin 4s linear infinite;
+    z-index: 1;
+  }
+
+  .signup-box .content {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: #121212;
+    z-index: 2;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+
+  .signup-box:hover {
+    height: 360px;
+  }
+
+  .signup-box:hover .content {
+    padding: 20px;
+    justify-content: flex-start;
+  }
+
+  .signup-box h2 {
+    margin: 10px 0;
+  }
+
+  form {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .signup-box:hover form {
+    display: flex;
+  }
+
+  input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  .logout-btn{
+    display: none;
+  }
+  button {
+    padding: 10px;
+    background: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .icon-cart{
+    cursor: pointer;
+  }
+  .bage{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 90px;
+  }
+  .amood{
+    width: 48%;
+  }
+  .baba{
+    position: relative;
+  }
+  .back{
+    background-color: #121212;
+    position: absolute;
+    border-radius: 0 40px 0 0;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    transform: translate(10% , -15%);
+    z-index:0;
+  }
+  .icons{
+    color: #00AEEF;
+    margin: 5px ;
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer ;
+  }
+  .icon-plus{
+    border: 1px solid #00AEEF;
+    border-radius: 0 20px 0 20px;
+  }
+  /* //////////////////////////////////////////////// */
+  .cart2list {
+    position: absolute;
+    width: 200px;
+    list-style: none;
+    background-color: #121212; /* لون الخلفية ثابت */
+    top: 90px;
+    /* transform: translate(0, 0); */
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+    position: absolute; /* علشان نتحكم في العناصر الزائفة */
+    z-index: 1;
+    border: 2px solid transparent; /* بوردر شفاف عشان نستبدله بالأنيميشن */
+
+    display: none;
+}
+
+.cart2list::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, red, blue, red, blue);
+  background-size: 400% 400%;
+  animation: spin 4s linear infinite;
+  z-index: -1;
+  border-radius: inherit;
+  
+  /* الحل الحديث المدعوم في جميع المتصفحات */
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor; /* للسابقية مع المتصفحات القديمة */
+  padding: 2px;
+}
+
+@keyframes spin {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 400% 50%;
+    }
+}
+  /* ///////////////////////////////////// */
+  
+  .cart2list li{
+    color: #00AEEF;
+    padding: 5px;
+  }
+
+  .btn-view{
+    width: 100%;
+    
+  }
+.btn-view a{
+  text-decoration: none;
+  color: #fff;
+}
+.img-slides{
+  position: relative;
+  width: 500px; 
+  height: 300px;
+  margin: auto; 
+  margin-top: 10%; 
+}
+.amood3{
+  width: 100%;
+  margin-top: 100px;
+  align-items: center;
+  margin-right: 30px;
+}
+.container2{
+  width: 83%;
+  transform: translate(5% , 0px);
+}
+.img-slides2{
+  position: relative;
+  width: 70%; 
+  height: 450px;
+  margin: auto; 
+  margin-top: 10%; 
+}
+
+@media screen and (max-width : 1300px) {
+  .amood1{
+    margin-top: 100px;
+  }
+  .bage{
+    display: block;
+  }
+  .img-slides{
+    width: 90%; 
+    height: 270px;
+  }
+  .amood{
+    width: 100%;
+  }
+  .img-slides2{
+    margin-top: 17%; 
+  }
+}
+
+@media screen and (max-width : 650px) {
+  
+  .back{
+    transform: translate(16% , -15%);
+  }
+  .img-slides2{
+    height: 350px;
+    margin-top: 25%; 
+  }
+}
